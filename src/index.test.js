@@ -24,6 +24,14 @@ describe('Check serverless-webpack-prisma plugin', () => {
         getFunction: () => ({}),
         custom: { webpack: {}, prisma: { installDeps: true, prismaPath: '' } },
       },
+      pluginManager: {
+        plugins: [],
+        commands: {
+          webpack: {
+            pluginName: '',
+          },
+        },
+      },
     });
   });
 
